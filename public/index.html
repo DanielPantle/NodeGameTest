@@ -2,7 +2,7 @@
 <html lang="de" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>NodeTest</title>
     </head>
     <body>
         <h1>Test</h1>
@@ -15,6 +15,18 @@
         <div id="test">
             <input type="text" id="inputTestMessage" name="inputTestMessage" value="test message..." />
             <button id="inputTestButton">Test-Nachricht senden</button>
+        </div>
+
+        <div id="sendProgramCard">
+            <br />
+            <button class="sendProgramCardButton" id="sendProgramCardMove1" name="move_1">Move 1</button>
+            <button class="sendProgramCardButton" id="sendProgramCardMove2" name="move_2">Move 2</button>
+            <button class="sendProgramCardButton" id="sendProgramCardMove3" name="move_3">Move 3</button>
+            <button class="sendProgramCardButton" id="sendProgramCardBackup" name="backup">Backup</button>
+            <br /><br />
+            <button class="sendProgramCardButton" id="sendProgramCardRotateRight" name="rotate_right">Rotate right</button>
+            <button class="sendProgramCardButton" id="sendProgramCardRotateLeft" name="rotate_left">Rotate left</button>
+            <button class="sendProgramCardButton" id="sendProgramCardRotateUturn" name="u_turn">Rotate left</button>
         </div>
 
         <script src="/socket.io/socket.io.js"></script>

@@ -13,6 +13,14 @@ $('#inputTestButton').click(function() {
     });
 });
 
+$('.sendProgramCardButton').click(function() {
+    var programCard = this.name;
+    socket.emit('player_to_host', {
+         messageType: "programCard",
+         message: programCard
+    });
+});
+
 
 
 // Test-Message von Hand: socket.emit('player_to_host', {messageType: "test", message: ""});
