@@ -19,15 +19,19 @@
 
         <div id="sendProgramCard">
             <br />
-            <button class="sendProgramCardButton" id="sendProgramCardMove1" name="move_1">Move 1</button>
-            <button class="sendProgramCardButton" id="sendProgramCardMove2" name="move_2">Move 2</button>
-            <button class="sendProgramCardButton" id="sendProgramCardMove3" name="move_3">Move 3</button>
-            <button class="sendProgramCardButton" id="sendProgramCardBackup" name="backup">Backup</button>
+            <button id="removeProgramCards">Auswahl löschen</button>
+            <button class="addProgramCardButton" id="sendProgramCardMove1" name="move_1">Move 1</button>
+            <button class="addProgramCardButton" id="sendProgramCardMove2" name="move_2">Move 2</button>
+            <button class="addProgramCardButton" id="sendProgramCardMove3" name="move_3">Move 3</button>
+            <button class="addProgramCardButton" id="sendProgramCardBackup" name="backup">Backup</button>
             <br /><br />
-            <button class="sendProgramCardButton" id="sendProgramCardRotateRight" name="rotate_right">Rotate right</button>
-            <button class="sendProgramCardButton" id="sendProgramCardRotateLeft" name="rotate_left">Rotate left</button>
-            <button class="sendProgramCardButton" id="sendProgramCardRotateUturn" name="u_turn">Rotate left</button>
+            <button class="addProgramCardButton" id="sendProgramCardRotateRight" name="rotate_right">Rotate right</button>
+            <button class="addProgramCardButton" id="sendProgramCardRotateLeft" name="rotate_left">Rotate left</button>
+            <button class="addProgramCardButton" id="sendProgramCardRotateUturn" name="u_turn">U-Turn</button>
         </div>
+
+        <div id="programCardList"></div>
+        <button id="sendProgramCardsButton" name="u_turn">Absenden</button>
 
         <script src="/socket.io/socket.io.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>

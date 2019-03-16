@@ -13,12 +13,24 @@ $('#inputTestButton').click(function() {
     });
 });
 
-$('.sendProgramCardButton').click(function() {
-    var programCard = this.name;
+$('.addProgramCardButton').click(function() {
+    $('#programCardList').append('<label>' + this.name + '</label><br />');
+});
+$('#removeProgramCards').click(function() {
+    $('#programCardList').empty();
+});
+
+$('#sendProgramCardsButton').click(function() {
+    var programCards = [];
+    $('#programCardList label').each(function(i) {
+        programCards.push($(this).text());
+    });
+
     socket.emit('player_to_host', {
          messageType: "programCard",
-         message: programCard
+         message: programCards.toString()
     });
+    $('#programCardList').empty();
 });
 
 
