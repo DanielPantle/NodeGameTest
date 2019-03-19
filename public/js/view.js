@@ -25,6 +25,10 @@ $('#sendProgramCardsButton').click(function() {
     $('#programCardList label').each(function(i) {
         programCards.push($(this).text());
     });
+    if(programCards.length != 5) {
+        alert("Du musst 5 Karten auswählen!");
+        return;
+    }
 
     socket.emit('player_to_host', {
          messageType: "programCard",
