@@ -10,6 +10,10 @@ sockets.init = function(server) {
     // socket.io setup
     var io = require('socket.io').listen(server);
 
+    io.on('connection', function(socket) {
+        console.log("Test connection. " + socket);
+    });
+
     // Verbindung hergestellt
     io.sockets.on('connection', function(socket) {
         // Client wurde verbunden
