@@ -1,5 +1,4 @@
 
-
 var socket = io('', {query: 'clienttype=' + global.ClientType.PLAYER});
 
 socket.on('connect', function() {
